@@ -1,0 +1,48 @@
+# ======================================
+# Power BI - PBIP / PBIR
+# ======================================
+
+# Arquivos temporários e cache do Power BI
+**/.pbi/
+**/.pbix.lock
+**/*.tmp
+
+# Arquivos locais gerados pelo Power BI
+**/Cache/
+**/Temp/
+**/AnalysisServicesWorkspace/
+
+# Arquivos de backup automáticos
+**/*.pbix~
+**/*.bak
+
+# Logs
+**/*.log
+
+# ======================================
+# Sistema Operacional
+# ======================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ======================================
+# VS Code
+# ======================================
+
+.vscode/
+
+# ======================================
+# Git
+# ======================================
+
+*.orig
+*.rej
+
+# ======================================
+# Arquivos sensíveis / locais
+# ======================================
+
+# Caso exista versão PBIX local
+*.pbix
