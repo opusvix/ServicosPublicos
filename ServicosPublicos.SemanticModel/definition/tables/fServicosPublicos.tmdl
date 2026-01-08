@@ -1,0 +1,176 @@
+table fServicosPublicos
+	lineageTag: ec0b73e4-8319-4da1-a06b-00d11e3a0139
+
+	column servico
+		dataType: string
+		lineageTag: 0b13257d-8540-4903-b7d2-b987a580463f
+		summarizeBy: none
+		sourceColumn: servico
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b02d3be-486c-4a23-b7e6-da33a0f1cef0
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 9750d1b5-b97a-4c21-ad59-e08816ab312d
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtdDias
+		dataType: int64
+		formatString: 0
+		lineageTag: a7421bfd-7373-47c3-8124-02232b902f93
+		summarizeBy: sum
+		sourceColumn: qtdDias
+
+		annotation SummarizationSetBy = Automatic
+
+	column volFaturado
+		dataType: double
+		formatString: 0
+		lineageTag: 1f83c8e8-f57d-4efa-a554-12c40ae0cabd
+		summarizeBy: sum
+		sourceColumn: volFaturado
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidadeMedida
+		dataType: string
+		lineageTag: 54144a74-252f-4db1-b9f2-1e89527bb949
+		summarizeBy: none
+		sourceColumn: unidadeMedida
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		formatString: 0.00
+		lineageTag: a04287cc-7e42-45d1-90aa-a67d0e6272a8
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	column custoUnitario
+		dataType: double
+		formatString: 0.00
+		lineageTag: 4aff7788-e3f5-4296-b8e2-6f6be5877acf
+		summarizeBy: sum
+		sourceColumn: custoUnitario
+
+		annotation SummarizationSetBy = Automatic
+
+	column leituraAnterior
+		dataType: int64
+		formatString: 0
+		lineageTag: 761ffc7c-a7f0-499b-86e0-1b55ab02f8a9
+		summarizeBy: sum
+		sourceColumn: leituraAnterior
+
+		annotation SummarizationSetBy = Automatic
+
+	column leituraAtual
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a217c56-ae30-41ac-ba81-72e743b08971
+		summarizeBy: sum
+		sourceColumn: leituraAtual
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo
+		dataType: string
+		lineageTag: 6492af9f-1438-4aa9-bf9a-b85d32453675
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column agua
+		dataType: double
+		formatString: 0.00
+		lineageTag: 6f858383-3997-450f-a3ed-6838dc8fc31c
+		summarizeBy: sum
+		sourceColumn: agua
+
+		annotation SummarizationSetBy = Automatic
+
+	column esgoto
+		dataType: double
+		formatString: 0.00
+		lineageTag: d40aad7e-beb7-4c1c-b5e7-ca0660789560
+		summarizeBy: sum
+		sourceColumn: esgoto
+
+		annotation SummarizationSetBy = Automatic
+
+	column bandeiraTarifaria
+		dataType: string
+		lineageTag: 1a414f6e-981e-4291-9d78-4fed04708c90
+		summarizeBy: none
+		sourceColumn: bandeiraTarifaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column economiaValor
+		dataType: double
+		formatString: 0.00
+		lineageTag: 53985170-5934-4510-942f-f7b48d7648f4
+		summarizeBy: sum
+		sourceColumn: economiaValor
+
+		annotation SummarizationSetBy = Automatic
+
+	column contribuicaoAmbiental
+		dataType: double
+		formatString: #,0.000
+		lineageTag: 674f5b12-8592-4b50-8353-94f597fa4482
+		summarizeBy: sum
+		sourceColumn: contribuicaoAmbiental
+
+		annotation SummarizationSetBy = Automatic
+
+	column DataReferencia = ```
+			
+			DATE(
+			    fServicosPublicos[ano],
+			    fServicosPublicos[mes],
+			    1
+			)
+			
+			```
+		formatString: Short Date
+		lineageTag: 6e8ba985-f075-4a9d-9fd2-e625d343167a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fServicosPublicos = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("D:\Onedrive - vtxcy\ProjetosBI\ServicosPublicos\ServicosPublicos.xlsx"), null, true),
+				    tServicos_Table = Fonte{[Item="tServicos",Kind="Table"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(tServicos_Table,{{"servico", type text}, {"ano", Int64.Type}, {"mes", Int64.Type}, {"qtdDias", Int64.Type}, {"volFaturado", type number}, {"unidadeMedida", type text}, {"valor", type number}, {"custoUnitario", type number}, {"leituraAnterior", Int64.Type}, {"leituraAtual", Int64.Type}, {"tipo", type text}, {"agua", type number}, {"esgoto", type number}, {"bandeiraTarifaria", type text}, {"economiaValor", type number}, {"contribuicaoAmbiental", type number}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each ([ano] <> null and [ano] <> 2018 and [ano] <> 2019 and [ano] <> 2020)),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"contribuicaoAmbiental", type number}})
+				in
+				    #"Tipo Alterado1"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,8 @@
+relationship 044c51e3-236b-6c3a-6270-368b0cd82006
+	fromColumn: fServicosPublicos.DataReferencia
+	toColumn: dCalendario.Date
+
+relationship AutoDetected_9b4766ab-cc8f-4c2a-ad07-0bfa231040cd
+	fromColumn: fServicosPublicos.servico
+	toColumn: dServicos.servico
+

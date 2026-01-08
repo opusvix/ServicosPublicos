@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 398,
+            "y": 0
+          },
+          "nodeIndex": "fServicosPublicos",
+          "nodeLineageTag": "ec0b73e4-8319-4da1-a06b-00d11e3a0139",
+          "size": {
+            "height": 539,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 278
+          },
+          "nodeIndex": "dCalendario",
+          "nodeLineageTag": "cb5cf8b7-3abb-40c3-9a9d-a811fd672595",
+          "size": {
+            "height": 271,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1018,
+            "y": 12.5
+          },
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "31ad257f-79e2-4184-865b-d5b6e10090e9",
+          "size": {
+            "height": 378,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 759,
+            "y": 462.5
+          },
+          "nodeIndex": "dServicos",
+          "nodeLineageTag": "8e62a5ec-1c6a-4396-b99a-36f1ff26396b",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

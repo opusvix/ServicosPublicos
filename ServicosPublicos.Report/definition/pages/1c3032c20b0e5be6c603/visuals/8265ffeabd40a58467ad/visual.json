@@ -1,0 +1,309 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "8265ffeabd40a58467ad",
+  "position": {
+    "x": 146.21111677715453,
+    "y": 102.47832738398776,
+    "z": 0,
+    "height": 607.03722590515042,
+    "width": 1126.6088730239674,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dServicos"
+                    }
+                  },
+                  "Property": "servico"
+                }
+              },
+              "queryRef": "dServicos.servico",
+              "nativeQueryRef": "servico",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dCalendario"
+                    }
+                  },
+                  "Property": "Ano"
+                }
+              },
+              "queryRef": "dCalendario.Ano",
+              "nativeQueryRef": "Ano",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dCalendario"
+                    }
+                  },
+                  "Property": "MesNome"
+                }
+              },
+              "queryRef": "dCalendario.MesNome",
+              "nativeQueryRef": "MesNome",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "qtdDias"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fServicosPublicos.qtdDias)",
+              "nativeQueryRef": "Soma de qtdDias"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Consumo Total"
+                }
+              },
+              "queryRef": "_Medidas.Consumo Total",
+              "nativeQueryRef": "Consumo Total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Valor Total"
+                }
+              },
+              "queryRef": "_Medidas.Valor Total",
+              "nativeQueryRef": "Valor Total"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "custoUnitario"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fServicosPublicos.custoUnitario)",
+              "nativeQueryRef": "Soma de custoUnitario"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "leituraAnterior"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fServicosPublicos.leituraAnterior)",
+              "nativeQueryRef": "Soma de leituraAnterior"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "leituraAtual"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fServicosPublicos.leituraAtual)",
+              "nativeQueryRef": "Soma de leituraAtual"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "tipo"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(fServicosPublicos.tipo)",
+              "nativeQueryRef": "Primeiro tipo"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "agua"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fServicosPublicos.agua)",
+              "nativeQueryRef": "Soma de agua"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fServicosPublicos"
+                        }
+                      },
+                      "Property": "esgoto"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fServicosPublicos.esgoto)",
+              "nativeQueryRef": "Soma de esgoto"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dCalendario.Ano"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dCalendario"
+                    }
+                  },
+                  "Property": "Ano"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "dCalendario.MesNome"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "2025L"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

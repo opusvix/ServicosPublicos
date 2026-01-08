@@ -1,0 +1,2221 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "f_servicos_publico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f servicos publico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "f servico publico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "fServicosPublicos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.servico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "servico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "servico": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.qtd_dias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "qtdDias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd dias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtdDias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.vol_faturado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "volFaturado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vol faturado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "volFaturado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.unidade_medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "unidadeMedida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unidade medida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unidadeMedida": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.custo_unitario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "custoUnitario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "custo unitario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "custoUnitario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.leitura_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "leituraAnterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "leitura anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leituraAnterior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.leitura_atual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "leituraAtual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "leitura atual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leituraAtual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.agua": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "agua"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agua": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.esgoto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "esgoto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "esgoto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.bandeira_tarifaria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "bandeiraTarifaria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bandeira tarifaria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bandeiraTarifaria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.economia_valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "economiaValor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "economia valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "economiaValor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "economia courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "economia pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "economia spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "economia nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.contribuicao_ambiental": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "contribuicaoAmbiental"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "contribuicao ambiental": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "contribuicaoAmbiental": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_servicos_publico.data_referencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fServicosPublicos",
+			          "ConceptualProperty": "DataReferencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data referencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DataReferencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record referencia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dCalendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.mes_nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "MesNome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes nome": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me nome": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "MesNome": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.ano_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "AnoMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AnoMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ano-Mes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.valor_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Valor Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "valor overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.economia_solar_r": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Economia Solar (R$)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "economia solar (r$)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "economia solar": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.consumo_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Consumo Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "consumo total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "consumo aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "consumo overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.valor_líquido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Valor Líquido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor líquido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.economia_solar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "% Economia Solar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% economia solar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage economia solar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct economia solar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "d_servico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dServicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d servico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dServicos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_servico.servico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dServicos",
+			          "ConceptualProperty": "servico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "servico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Serviços": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.economia_solar_acumulada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Economia Solar Acumulada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "economia solar acumulada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.custo_sem_solar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Custo Sem Solar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "custo sem solar": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.contribuição_ambiental_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Contribuição Ambiental Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "contribuição ambiental total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "contribuição ambiental aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "contribuição ambiental overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.entity__contribuição_ambiental_total_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_Contribuição Ambiental Total FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_contribuição ambiental total FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_contribuição ambiental aggregate formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_contribuição ambiental overall formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "f_servicos_publico_has_entity__medida_custo_sem_solar": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.custo_sem_solar": {
+			          "Target": {
+			            "Entity": "entity__medida.custo_sem_solar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.custo_sem_solar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_custo_sem_solar"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_economia_solar_acumulada": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.economia_solar_acumulada": {
+			          "Target": {
+			            "Entity": "entity__medida.economia_solar_acumulada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.economia_solar_acumulada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_economia_solar_acumulada"
+			        }
+			      ]
+			    },
+			    "d_servico_has_servico": {
+			      "Binding": {
+			        "ConceptualEntity": "dServicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_servico": {
+			          "Target": {
+			            "Entity": "d_servico"
+			          }
+			        },
+			        "d_servico.servico": {
+			          "Target": {
+			            "Entity": "d_servico.servico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_servico"
+			            },
+			            "Object": {
+			              "Role": "d_servico.servico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_servicos_have_servicos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_economia_solar": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.economia_solar": {
+			          "Target": {
+			            "Entity": "entity__medida.economia_solar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.economia_solar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have__economia_solar"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_valor_líquido": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.valor_líquido": {
+			          "Target": {
+			            "Entity": "entity__medida.valor_líquido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.valor_líquido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_valor_líquido"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_consumo_total": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.consumo_total": {
+			          "Target": {
+			            "Entity": "entity__medida.consumo_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.consumo_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_consumo_total"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_economia_solar_r": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.economia_solar_r": {
+			          "Target": {
+			            "Entity": "entity__medida.economia_solar_r"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.economia_solar_r"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_economia_solar_r"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_valor_total": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.valor_total": {
+			          "Target": {
+			            "Entity": "entity__medida.valor_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.valor_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_valor_total"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano_me": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano_me": {
+			          "Target": {
+			            "Entity": "d_calendario.ano_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_ano_me"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_mes_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.mes_nome": {
+			          "Target": {
+			            "Entity": "d_calendario.mes_nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.mes_nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_mes_nome"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.me": {
+			          "Target": {
+			            "Entity": "d_calendario.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_me"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.date": {
+			          "Target": {
+			            "Entity": "d_calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_data_referencia": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.data_referencia": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.data_referencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.data_referencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_data_referencias"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_contribuicao_ambiental": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.contribuicao_ambiental": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.contribuicao_ambiental"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.contribuicao_ambiental"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_contribuicao_ambientals"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_economia_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.economia_valor": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.economia_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.economia_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_economia_valor"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_bandeira_tarifaria": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.bandeira_tarifaria": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.bandeira_tarifaria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.bandeira_tarifaria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_bandeira_tarifarias"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_esgoto": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.esgoto": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.esgoto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.esgoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_esgotos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_agua": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.agua": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.agua"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.agua"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_agua"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.tipo": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_tipos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_leitura_atual": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.leitura_atual": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.leitura_atual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.leitura_atual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_leitura_atuals"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_leitura_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.leitura_anterior": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.leitura_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.leitura_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_leitura_anterior"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_custo_unitario": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.custo_unitario": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.custo_unitario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.custo_unitario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_custo_unitarios"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.valor": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_valor"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_unidade_medida": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.unidade_medida": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.unidade_medida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.unidade_medida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_unidade_medidas"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_vol_faturado": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.vol_faturado": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.vol_faturado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.vol_faturado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_vol_faturados"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_qtd_dias": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.qtd_dias": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.qtd_dias"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.qtd_dias"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_qtd_dias"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.me": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_me"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "f_servicos_publico.ano": {
+			          "Target": {
+			            "Entity": "f_servicos_publico.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_anos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_contribuição_ambiental_total": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.contribuição_ambiental_total": {
+			          "Target": {
+			            "Entity": "entity__medida.contribuição_ambiental_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.contribuição_ambiental_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_contribuição_ambiental_total"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_servicos_publicos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_d_servico": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "d_servico": {
+			          "Target": {
+			            "Entity": "d_servico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "d_servico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_d_servicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_servico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_servicos_have_f_servicos_publicos"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

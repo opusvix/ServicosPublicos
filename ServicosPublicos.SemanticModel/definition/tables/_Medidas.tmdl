@@ -1,0 +1,83 @@
+table _Medidas
+	lineageTag: 31ad257f-79e2-4184-865b-d5b6e10090e9
+
+	measure 'Valor Total' = ```
+			SUM(fServicosPublicos[valor])
+			
+			```
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
+		lineageTag: b354d08e-c82d-46ff-bbbc-0a2b9ec14fd1
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Economia Solar (R$)' = SUM(fServicosPublicos[economiaValor])
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
+		lineageTag: 026ebca4-5bbf-4278-9336-ce208b3e2dad
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Consumo Total' = SUM(fServicosPublicos[volFaturado])
+		formatString: 0
+		lineageTag: 7d7e911c-6403-4c2d-aa11-984b6733e336
+
+	measure 'Valor Líquido' =
+			
+			[Valor Total] - [Economia Solar (R$)]
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
+		lineageTag: 51f20ef3-8f41-430a-87c2-bd4d28315ff0
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Economia Solar' = ```
+			
+			DIVIDE([Economia Solar (R$)], [Valor Total])
+			
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: ea37333c-9eb3-491a-8817-eeb6828fa431
+
+	measure 'Economia Solar Acumulada' = ```
+			
+			CALCULATE(
+			    [Economia Solar (R$)],
+			    FILTER(
+			        ALL(dCalendario),
+			        dCalendario[Date] <= MAX(dCalendario[Date])
+			    )
+			)
+			
+			```
+		lineageTag: f09daaa2-39ed-40ae-bc65-ff6f457a70ea
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Custo Sem Solar' = ```
+			
+			[Valor Total] + [Economia Solar (R$)]
+			
+			```
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
+		lineageTag: 82680ca6-a7d1-4d5c-8132-2f6642342bde
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Contribuição Ambiental Total' = ```
+			
+			SUM(fServicosPublicos[contribuicaoAmbiental])
+			
+			```
+		formatString: 0.000
+		lineageTag: 12592b44-b5bf-4cf2-895f-bb57eefa5494
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

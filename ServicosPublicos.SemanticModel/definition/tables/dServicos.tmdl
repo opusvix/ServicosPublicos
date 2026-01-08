@@ -1,0 +1,29 @@
+table dServicos
+	lineageTag: 8e62a5ec-1c6a-4396-b99a-36f1ff26396b
+
+	column servico
+		dataType: string
+		lineageTag: 992e4478-bbf3-4159-9575-bcceb8df447b
+		summarizeBy: none
+		sourceColumn: servico
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dServicos = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("D:\Onedrive - vtxcy\ProjetosBI\ServicosPublicos\ServicosPublicos.xlsx"), null, true),
+				    tServicos_Table = Fonte{[Item="tServicos",Kind="Table"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(tServicos_Table,{{"servico", type text}, {"ano", Int64.Type}, {"mes", Int64.Type}, {"qtdDias", Int64.Type}, {"volFaturado", type number}, {"unidadeMedida", type text}, {"valor", type number}, {"custoUnitario", type number}, {"leituraAnterior", Int64.Type}, {"leituraAtual", Int64.Type}, {"tipo", type text}, {"agua", type number}, {"esgoto", type number}, {"bandeiraTarifaria", type text}, {"economiaValor", type number}, {"contribuicaoAmbiental", type number}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each ([ano] <> null and [ano] <> 2018 and [ano] <> 2019 and [ano] <> 2020)),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"contribuicaoAmbiental", type number}}),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Tipo Alterado1",{"servico"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas")
+				in
+				    #"Duplicatas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
