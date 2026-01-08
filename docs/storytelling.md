@@ -9,6 +9,8 @@ Os custos com serviços públicos representam parcela relevante do orçamento. E
 * Como os custos evoluíram ao longo do tempo?
 * Qual o impacto financeiro da energia solar?
 * Existe sazonalidade no consumo?
+
+    O heatmap sazonal evidencia picos recorrentes de consumo em determinados meses, indicando um padrão sazonal. Essa visualização permite identificar períodos críticos e apoiar ações de planejamento e eficiência.
 * Quais serviços apresentam maior custo unitário?
 
 ## Jornada Analítica
