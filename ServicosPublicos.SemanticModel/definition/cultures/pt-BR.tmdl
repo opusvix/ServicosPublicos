@@ -774,6 +774,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Mês": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1016,6 +1026,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Tipo de Serviço": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1086,48 +1106,134 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
-			    },
-			    "entity__medida.entity__contribuição_ambiental_total_FormatString": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "_Contribuição Ambiental Total FormatString"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "_contribuição ambiental total FormatString": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "_contribuição ambiental aggregate formatstring": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
-			          }
-			        },
-			        {
-			          "_contribuição ambiental overall formatstring": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
-			          }
-			        }
-			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "f_servicos_publico_has_d_servico": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "d_servico": {
+			          "Target": {
+			            "Entity": "d_servico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "d_servico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_d_servicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_servico"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_servicos_have_f_servicos_publicos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_servicos_publico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_servicos_publicos"
+			        }
+			      ]
+			    },
+			    "f_servicos_publico_has_entity__medida_contribuição_ambiental_total": {
+			      "Binding": {
+			        "ConceptualEntity": "fServicosPublicos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_servicos_publico": {
+			          "Target": {
+			            "Entity": "f_servicos_publico"
+			          }
+			        },
+			        "entity__medida.contribuição_ambiental_total": {
+			          "Target": {
+			            "Entity": "entity__medida.contribuição_ambiental_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_servicos_publico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.contribuição_ambiental_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_servicos_publicos_have_contribuição_ambiental_total"
+			        }
+			      ]
+			    },
 			    "f_servicos_publico_has_entity__medida_custo_sem_solar": {
 			      "Binding": {
 			        "ConceptualEntity": "fServicosPublicos"
@@ -1161,15 +1267,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_servicos_publico_has_entity__medida_economia_solar_acumulada": {
+			    "entity__medida_has_economia_solar_acumulada": {
 			      "Binding": {
-			        "ConceptualEntity": "fServicosPublicos"
+			        "ConceptualEntity": "_Medidas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_servicos_publico": {
+			        "entity__medida": {
 			          "Target": {
-			            "Entity": "f_servicos_publico"
+			            "Entity": "entity__medida"
 			          }
 			        },
 			        "entity__medida.economia_solar_acumulada": {
@@ -1182,7 +1288,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_servicos_publico"
+			              "Role": "entity__medida"
 			            },
 			            "Object": {
 			              "Role": "entity__medida.economia_solar_acumulada"
@@ -1190,7 +1296,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_servicos_publicos_have_economia_solar_acumulada"
+			          "ID": "Phrasing_medidas_have_economia_solar_acumulada"
 			        }
 			      ]
 			    },
@@ -2082,131 +2188,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_servicos_publicos_have_anos"
-			        }
-			      ]
-			    },
-			    "f_servicos_publico_has_entity__medida_contribuição_ambiental_total": {
-			      "Binding": {
-			        "ConceptualEntity": "fServicosPublicos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_servicos_publico": {
-			          "Target": {
-			            "Entity": "f_servicos_publico"
-			          }
-			        },
-			        "entity__medida.contribuição_ambiental_total": {
-			          "Target": {
-			            "Entity": "entity__medida.contribuição_ambiental_total"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_servicos_publico"
-			            },
-			            "Object": {
-			              "Role": "entity__medida.contribuição_ambiental_total"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_servicos_publicos_have_contribuição_ambiental_total"
-			        }
-			      ]
-			    },
-			    "f_servicos_publico_has_d_calendario": {
-			      "Binding": {
-			        "ConceptualEntity": "fServicosPublicos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_servicos_publico": {
-			          "Target": {
-			            "Entity": "f_servicos_publico"
-			          }
-			        },
-			        "d_calendario": {
-			          "Target": {
-			            "Entity": "d_calendario"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_servicos_publico"
-			            },
-			            "Object": {
-			              "Role": "d_calendario"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_servicos_publicos_have_d_calendarios"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario"
-			            },
-			            "Object": {
-			              "Role": "f_servicos_publico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_calendarios_have_f_servicos_publicos"
-			        }
-			      ]
-			    },
-			    "f_servicos_publico_has_d_servico": {
-			      "Binding": {
-			        "ConceptualEntity": "fServicosPublicos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_servicos_publico": {
-			          "Target": {
-			            "Entity": "f_servicos_publico"
-			          }
-			        },
-			        "d_servico": {
-			          "Target": {
-			            "Entity": "d_servico"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_servicos_publico"
-			            },
-			            "Object": {
-			              "Role": "d_servico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_servicos_publicos_have_d_servicos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_servico"
-			            },
-			            "Object": {
-			              "Role": "f_servicos_publico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_servicos_have_f_servicos_publicos"
 			        }
 			      ]
 			    }

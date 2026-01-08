@@ -11,7 +11,7 @@ table dCalendario
 		annotation SummarizationSetBy = Automatic
 
 	column Ano
-		formatString: 0
+		dataType: string
 		lineageTag: 0cdf4e51-6507-4eb0-b771-d548140be40a
 		summarizeBy: none
 		isNameInferred

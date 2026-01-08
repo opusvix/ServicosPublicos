@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "2c8ea9648620a8eb6b1b",
+  "name": "6ec56bf0540a13bae147",
   "position": {
-    "x": 0,
-    "y": 189.94390617032127,
+    "x": 10.594431903686882,
+    "y": 124.24379232505643,
     "z": 2000,
-    "height": 63.9673635900051,
-    "width": 144.25293217746048,
-    "tabOrder": 2000
+    "height": 65.4928517682468,
+    "width": 133.87509405568096
   },
   "visual": {
     "visualType": "slicer",
@@ -27,8 +26,9 @@
                 }
               },
               "queryRef": "dCalendario.MesNome",
-              "nativeQueryRef": "MesNome",
-              "active": true
+              "nativeQueryRef": "Mês",
+              "active": true,
+              "displayName": "Mês"
             }
           ]
         }
@@ -62,6 +62,13 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -103,23 +110,12 @@
                   "Value": "10D"
                 }
               }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Mês'"
-                }
-              }
             }
           }
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "MesNome",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "5c1e01eacd61161967c8"
 }

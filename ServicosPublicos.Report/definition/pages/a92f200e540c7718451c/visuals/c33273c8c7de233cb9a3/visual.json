@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "843b7188403244d37067",
+  "name": "c33273c8c7de233cb9a3",
   "position": {
-    "x": 0,
-    "y": 252.60581336053036,
-    "z": 3000,
-    "height": 112.92197858235595,
-    "width": 144.25293217746048,
-    "tabOrder": 3000
+    "x": 10.816915698367294,
+    "y": 173.52608791485963,
+    "z": 2000,
+    "height": 71.590462105290456,
+    "width": 133.87509405568088,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dServicos"
+                      "Entity": "dCalendario"
                     }
                   },
-                  "Property": "servico"
+                  "Property": "MesNome"
                 }
               },
-              "queryRef": "dServicos.servico",
-              "nativeQueryRef": "servico",
-              "active": true
+              "queryRef": "dCalendario.MesNome",
+              "nativeQueryRef": "Mês",
+              "active": true,
+              "displayName": "Mês"
             }
           ]
         }
@@ -41,7 +42,7 @@
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Basic'"
+                  "Value": "'Dropdown'"
                 }
               }
             },
@@ -58,6 +59,25 @@
       "general": [
         {
           "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
             "orientation": {
               "expr": {
                 "Literal": {
@@ -81,26 +101,6 @@
           }
         }
       ],
-      "header": [
-        {
-          "properties": {
-            "textSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Tipo de Serviço'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "items": [
         {
           "properties": {
@@ -110,32 +110,88 @@
                   "Value": "8D"
                 }
               }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "titleWrap": {
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "0D"
                 }
               }
             }
           }
         }
       ],
+      "header": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "pendingChangesIcon": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
       "background": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -143,6 +199,19 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -163,11 +232,7 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "servico",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "6f70b8c71b7ec0c06dc5"
 }

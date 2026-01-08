@@ -102,7 +102,7 @@
             "areaShow": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -146,6 +146,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -198,6 +205,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'SingleLine'"
+                }
+              }
+            },
+            "backgroundTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "30L"
                 }
               }
             }
@@ -582,7 +596,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

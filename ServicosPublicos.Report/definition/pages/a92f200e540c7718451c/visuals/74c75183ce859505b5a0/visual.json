@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "c7a0b8e4437d8403267d",
+  "name": "74c75183ce859505b5a0",
   "position": {
-    "x": 2,
+    "x": 0,
     "y": 0,
-    "z": 6000,
-    "height": 93.046776232616949,
-    "width": 1271.0998735777498,
-    "tabOrder": 6000
+    "z": 0,
+    "height": 610.6245297215952,
+    "width": 156.02708803611728,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,40 +19,15 @@
               {
                 "textRuns": [
                   {
-                    "value": "📊 ",
+                    "value": "Filtros de Página",
                     "textStyle": {
-                      "fontSize": "20pt"
-                    }
-                  },
-                  {
-                    "value": "Consumo & Eficiência",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontSize": "20pt"
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
                     }
                   }
                 ],
                 "horizontalTextAlignment": "center"
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "🎯 "
-                  },
-                  {
-                    "value": "Perguntas de negócio",
-                    "textStyle": {
-                      "fontWeight": "bold"
-                    }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "\t  Quais serviços apresentam maior custo unitário? Existe sazonalidade no consumo?"
-                  }
-                ]
               }
             ]
           }
@@ -63,10 +38,35 @@
       "background": [
         {
           "properties": {
-            "show": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "30D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -83,22 +83,22 @@
                 }
               }
             },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
             "color": {
               "solid": {
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
                 }
               }
             }
@@ -107,5 +107,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "6f70b8c71b7ec0c06dc5"
 }

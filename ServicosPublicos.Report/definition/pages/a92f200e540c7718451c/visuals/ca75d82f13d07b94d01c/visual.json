@@ -1,0 +1,223 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "ca75d82f13d07b94d01c",
+  "position": {
+    "x": 1115.3047404063204,
+    "y": 0,
+    "z": 4000,
+    "height": 93.423626787057941,
+    "width": 156.02708803611736,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "shape": [
+        {
+          "properties": {
+            "tileShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'rectangleRounded'"
+                }
+              }
+            },
+            "rectangleRoundedCurve": {
+              "expr": {
+                "Literal": {
+                  "Value": "15L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "text": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Menu de Filtros'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "hover"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "weight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#118DFF'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "hover"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bookmark'"
+                }
+              }
+            },
+            "bookmark": {
+              "expr": {
+                "Literal": {
+                  "Value": "'f66fa99398058c2139d0'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "InsertVisualButton"
+}

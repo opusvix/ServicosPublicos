@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "843b7188403244d37067",
+  "name": "20f0fde33a2e96e56426",
   "position": {
-    "x": 0,
-    "y": 252.60581336053036,
+    "x": 10.594431903686882,
+    "y": 215.74115876598947,
     "z": 3000,
-    "height": 112.92197858235595,
-    "width": 144.25293217746048,
-    "tabOrder": 3000
+    "height": 64.529721595184341,
+    "width": 133.87509405568096
   },
   "visual": {
     "visualType": "slicer",
@@ -27,8 +26,9 @@
                 }
               },
               "queryRef": "dServicos.servico",
-              "nativeQueryRef": "servico",
-              "active": true
+              "nativeQueryRef": "Tipo de Serviço",
+              "active": true,
+              "displayName": "Tipo de Serviço"
             }
           ]
         }
@@ -41,7 +41,7 @@
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Basic'"
+                  "Value": "'Dropdown'"
                 }
               }
             },
@@ -64,6 +64,13 @@
                   "Value": "0D"
                 }
               }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -75,26 +82,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "header": [
-        {
-          "properties": {
-            "textSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Tipo de Serviço'"
                 }
               }
             }
@@ -113,61 +100,22 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
       ],
-      "background": [
+      "header": [
         {
           "properties": {
-            "show": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "border": [
-        {
-          "properties": {
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
+                  "Value": "10D"
                 }
               }
             }
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "servico",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "5c1e01eacd61161967c8"
 }

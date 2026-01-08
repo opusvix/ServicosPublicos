@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "a826a06424ed49809525",
+  "name": "7d860eb84c3d16508cba",
   "position": {
-    "x": 1.9581845996940337,
-    "y": 102.47832738398776,
-    "z": 3000,
-    "height": 63.314635390107092,
-    "width": 144.25293217746048,
-    "tabOrder": 3000
+    "x": 10.816915698367294,
+    "y": 73.510001150114476,
+    "z": 1000,
+    "height": 71.590462105290456,
+    "width": 133.87509405568088,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "slicer",
@@ -32,6 +32,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dCalendario"
+                  }
+                },
+                "Property": "Ano"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -88,7 +105,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "2025L"
+                                "Value": "'2025'"
                               }
                             }
                           ]
@@ -97,6 +114,25 @@
                     }
                   }
                 ]
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
               }
             }
           }
@@ -115,19 +151,6 @@
           }
         }
       ],
-      "header": [
-        {
-          "properties": {
-            "textSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "items": [
         {
           "properties": {
@@ -137,36 +160,20 @@
                   "Value": "8D"
                 }
               }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             },
-            "transparency": {
+            "outlineStyle": {
               "expr": {
                 "Literal": {
                   "Value": "0D"
@@ -176,13 +183,50 @@
           }
         }
       ],
-      "border": [
+      "header": [
         {
           "properties": {
-            "width": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "pendingChangesIcon": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -190,11 +234,22 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "Ano",
-      "fieldChanges": true,
-      "filterChanges": true
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "6f70b8c71b7ec0c06dc5"
 }

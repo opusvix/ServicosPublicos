@@ -1,0 +1,535 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Menu Fechado",
+  "name": "c1bb36a3553c92de65b3",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "6b392561de2a16c0c0db",
+      "3b759c1fd30abc6cbbc6",
+      "6f70b8c71b7ec0c06dc5",
+      "7d860eb84c3d16508cba",
+      "c33273c8c7de233cb9a3",
+      "1c3374db6764841ce8a6",
+      "74c75183ce859505b5a0"
+    ],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "a92f200e540c7718451c",
+    "sections": {
+      "a92f200e540c7718451c": {
+        "visualContainers": {
+          "17911cb5aa17692a2bd9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "556436d4c194de621064": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "561f0057b219bc34805e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "606bcd8e0722c1205950",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Total"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d43374b17a6cb23e8eda",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Economia Solar (R$)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "44410d7d93850d3c3413",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Líquido"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "97bf427d197e50b428a7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "% Economia Solar"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5bf215ab6a1604b99630",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "fServicosPublicos"
+                            }
+                          },
+                          "Property": "contribuicaoAmbiental"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Total"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d5e9ab35ccbee0736927": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "969fa664ae65500e061e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "AnoMes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7720c93729e0a0dd0043",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Total"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f883f6c02e0c0ecaa7dd",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Economia Solar (R$)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "467ef8e377501c834102",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "fServicosPublicos"
+                            }
+                          },
+                          "Property": "contribuicaoAmbiental"
+                        }
+                      },
+                      "Function": 4
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "AnoMes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "AnoMes"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ca75d82f13d07b94d01c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "3b759c1fd30abc6cbbc6": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "7d860eb84c3d16508cba": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "59835a1e7930b4508279",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "dCalendario",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "d"
+                                            }
+                                          },
+                                          "Property": "Ano"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'2025'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c33273c8c7de233cb9a3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a95773770acaeb91e753",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "MesNome"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "MesNome"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1c3374db6764841ce8a6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "83b79db1d5937d293b30",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "74c75183ce859505b5a0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "6b392561de2a16c0c0db": {
+            "isHidden": true,
+            "children": {
+              "6f70b8c71b7ec0c06dc5": {
+                "isHidden": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
