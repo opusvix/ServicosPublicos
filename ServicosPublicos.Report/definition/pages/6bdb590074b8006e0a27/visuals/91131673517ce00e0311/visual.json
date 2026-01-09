@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "91131673517ce00e0311",
+  "position": {
+    "x": 1118.7106227106226,
+    "y": 102,
+    "z": 8000,
+    "height": 606.71062271062272,
+    "width": 156.60073260073261
+  },
+  "visualGroup": {
+    "displayName": "Grupo 2 Consumo",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "e6ba014494aec3d804c5",
+  "position": {
+    "x": 1116.8351648351647,
+    "y": 102.15018320848975,
+    "z": 8000,
+    "height": 612.33699633699632,
+    "width": 156.60073260073261
+  },
+  "visualGroup": {
+    "displayName": "Grupo 3 Energia",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

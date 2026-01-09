@@ -64,12 +64,14 @@ table fServicosPublicos
 
 	column custoUnitario
 		dataType: double
-		formatString: 0.00
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
 		lineageTag: 4aff7788-e3f5-4296-b8e2-6f6be5877acf
 		summarizeBy: sum
 		sourceColumn: custoUnitario
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column leituraAnterior
 		dataType: int64
@@ -99,21 +101,25 @@ table fServicosPublicos
 
 	column agua
 		dataType: double
-		formatString: 0.00
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
 		lineageTag: 6f858383-3997-450f-a3ed-6838dc8fc31c
 		summarizeBy: sum
 		sourceColumn: agua
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
 	column esgoto
 		dataType: double
-		formatString: 0.00
+		formatString: "R$ "\ #,0.00;-"R$ "\ #,0.00;"R$ "\ #,0.00
 		lineageTag: d40aad7e-beb7-4c1c-b5e7-ca0660789560
 		summarizeBy: sum
 		sourceColumn: esgoto
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	column bandeiraTarifaria
 		dataType: string

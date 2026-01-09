@@ -4,7 +4,7 @@
   "position": {
     "x": 1.9262603461249059,
     "y": 0,
-    "z": 2000,
+    "z": 3000,
     "height": 93.423626787057941,
     "width": 1102.7840481565086,
     "tabOrder": 2000
@@ -88,7 +88,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }

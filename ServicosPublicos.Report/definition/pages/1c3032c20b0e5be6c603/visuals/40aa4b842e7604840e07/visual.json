@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "40aa4b842e7604840e07",
   "position": {
-    "x": 2,
+    "x": 2.1192052980132452,
     "y": 0,
     "z": 1000,
-    "height": 93.046776232616949,
-    "width": 1271.0998735777498,
+    "height": 93.245033112582789,
+    "width": 1105.5187637969095,
     "tabOrder": 1000
   },
   "visual": {
@@ -88,7 +88,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }

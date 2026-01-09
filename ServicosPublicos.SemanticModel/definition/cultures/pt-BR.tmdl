@@ -1018,6 +1018,16 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
+			          "Tipo de Serviço": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Serviços": {
 			            "State": "Suggested",
 			            "Source": {
@@ -1028,7 +1038,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Tipo de Serviço": {
+			          "SERVIÇO": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

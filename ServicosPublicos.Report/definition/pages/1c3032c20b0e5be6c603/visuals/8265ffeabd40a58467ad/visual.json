@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "8265ffeabd40a58467ad",
   "position": {
-    "x": 146.21111677715453,
-    "y": 102.47832738398776,
+    "x": 1.9219219219219221,
+    "y": 101.86186186186187,
     "z": 0,
-    "height": 607.03722590515042,
-    "width": 1126.6088730239674,
+    "height": 609.24924924924926,
+    "width": 1105.1051051051052,
     "tabOrder": 0
   },
   "visual": {
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "dServicos.servico",
-              "nativeQueryRef": "servico",
-              "active": true
+              "nativeQueryRef": "SERVIÇO",
+              "active": true,
+              "displayName": "SERVIÇO"
             }
           ]
         },
@@ -46,8 +47,9 @@
                 }
               },
               "queryRef": "dCalendario.Ano",
-              "nativeQueryRef": "Ano",
-              "active": true
+              "nativeQueryRef": "ANO",
+              "active": true,
+              "displayName": "ANO"
             },
             {
               "field": {
@@ -61,8 +63,9 @@
                 }
               },
               "queryRef": "dCalendario.MesNome",
-              "nativeQueryRef": "MesNome",
-              "active": true
+              "nativeQueryRef": "MÊS",
+              "active": true,
+              "displayName": "MÊS"
             }
           ]
         },
@@ -85,7 +88,8 @@
                 }
               },
               "queryRef": "Sum(fServicosPublicos.qtdDias)",
-              "nativeQueryRef": "Soma de qtdDias"
+              "nativeQueryRef": "QTD DIAS",
+              "displayName": "QTD DIAS"
             },
             {
               "field": {
@@ -99,7 +103,8 @@
                 }
               },
               "queryRef": "_Medidas.Consumo Total",
-              "nativeQueryRef": "Consumo Total"
+              "nativeQueryRef": "CONSUMO TOTAL",
+              "displayName": "CONSUMO TOTAL"
             },
             {
               "field": {
@@ -113,7 +118,8 @@
                 }
               },
               "queryRef": "_Medidas.Valor Total",
-              "nativeQueryRef": "Valor Total"
+              "nativeQueryRef": "VALOR TOTAL",
+              "displayName": "VALOR TOTAL"
             },
             {
               "field": {
@@ -132,7 +138,8 @@
                 }
               },
               "queryRef": "Sum(fServicosPublicos.custoUnitario)",
-              "nativeQueryRef": "Soma de custoUnitario"
+              "nativeQueryRef": "CUSTO UNITÁRIO",
+              "displayName": "CUSTO UNITÁRIO"
             },
             {
               "field": {
@@ -151,7 +158,8 @@
                 }
               },
               "queryRef": "Sum(fServicosPublicos.leituraAnterior)",
-              "nativeQueryRef": "Soma de leituraAnterior"
+              "nativeQueryRef": "LEITURA ANTERIOR",
+              "displayName": "LEITURA ANTERIOR"
             },
             {
               "field": {
@@ -170,7 +178,8 @@
                 }
               },
               "queryRef": "Sum(fServicosPublicos.leituraAtual)",
-              "nativeQueryRef": "Soma de leituraAtual"
+              "nativeQueryRef": "LEITURA ATUAL",
+              "displayName": "LEITURA ATUAL"
             },
             {
               "field": {
@@ -189,7 +198,8 @@
                 }
               },
               "queryRef": "Min(fServicosPublicos.tipo)",
-              "nativeQueryRef": "Primeiro tipo"
+              "nativeQueryRef": "TIPO DE APURAÇÃO",
+              "displayName": "TIPO DE APURAÇÃO"
             },
             {
               "field": {
@@ -208,7 +218,8 @@
                 }
               },
               "queryRef": "Sum(fServicosPublicos.agua)",
-              "nativeQueryRef": "Soma de agua"
+              "nativeQueryRef": "CUSTO TOTAL DE ÁGUA",
+              "displayName": "CUSTO TOTAL DE ÁGUA"
             },
             {
               "field": {
@@ -227,10 +238,28 @@
                 }
               },
               "queryRef": "Sum(fServicosPublicos.esgoto)",
-              "nativeQueryRef": "Soma de esgoto"
+              "nativeQueryRef": "CUSTO TOTAL DE ESGOTO",
+              "displayName": "CUSTO TOTAL DE ESGOTO"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dCalendario"
+                  }
+                },
+                "Property": "MesNome"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "expansionStates": [
@@ -277,6 +306,26 @@
                 }
               ],
               "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2024'"
+                  }
+                }
+              ],
+              "isToggled": true
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'2025'"
+                  }
+                }
+              ],
+              "isToggled": true
             }
           ]
         }
@@ -296,7 +345,2035 @@
             "rowSubtotals": {
               "expr": {
                 "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "perRowLevel": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "rowSubtotalsPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "rowSubtotalsLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total'"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "applyToHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Row"
+          }
+        },
+        {
+          "properties": {
+            "levelSubtotalLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Geral'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dCalendario.Ano"
+          }
+        },
+        {
+          "properties": {
+            "levelSubtotalLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Anual'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dCalendario.MesNome"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "titleAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'fitToContent'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "70D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.qtdDias)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "92.58442045907086D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Medidas.Consumo Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "91.22363439117835D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Medidas.Valor Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87.04239357939183D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.custoUnitario)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "96.51656361796432D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAnterior)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.80036749209566D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAtual)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "103.86846500587573D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Min(fServicosPublicos.tipo)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "116.2997074137634D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.agua)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "112.93044112207588D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SOLAR'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.esgoto)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79.22398597262941D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dCalendario.Ano"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "74D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.qtdDias)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "124D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "_Medidas.Consumo Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "_Medidas.Valor Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "122D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.custoUnitario)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "136D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAnterior)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "111D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAtual)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "140D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Min(fServicosPublicos.tipo)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "154D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.agua)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "174D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dServicos"
+                        }
+                      },
+                      "Property": "servico"
+                    }
+                  }
+                ]
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.esgoto)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "70D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.qtdDias)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87.28828203629352D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Medidas.Consumo Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "93D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Medidas.Valor Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.custoUnitario)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.52251906087797D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAnterior)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "81.85886126658426D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAtual)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "96.44444128471878D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Min(fServicosPublicos.tipo)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "97.22519986201243D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.agua)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "102.57658554027688D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ESCELSA'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.esgoto)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "70D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.qtdDias)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90.03753388991967D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Medidas.Consumo Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99.06401832214756D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Medidas.Valor Total"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104.4158779211976D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.custoUnitario)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99.3978605250967D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAnterior)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "97.34878397950555D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.leituraAtual)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100.21190807021532D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Min(fServicosPublicos.tipo)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "101.46435559713824D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.agua)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "98.45737135279309D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "Sum(fServicosPublicos.esgoto)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "86D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dServicos"
+                          }
+                        },
+                        "Property": "servico"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'CESAN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "174D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.qtdDias)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "83.51436504593129D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dCalendario.MesNome"
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "expandCollapseButtonsColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "expandCollapseButtonsSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowTotal": [
+        {
+          "properties": {}
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.qtdDias)"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Consumo Total"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Valor Total"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.custoUnitario)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.leituraAnterior)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.leituraAtual)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(fServicosPublicos.tipo)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.agua)"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fServicosPublicos.esgoto)"
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "bandedRowHeaders": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "valuesOnRow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Outline'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnTotal": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalhamento por Tipo de Serviço'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
                 }
               }
             }
