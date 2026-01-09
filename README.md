@@ -81,5 +81,7 @@ O relatório pode ser acessado diretamente pelo arquivo do projeto:
 ## 👤 Autor
 
 **Maurício Barros**
+
 Analista de Dados | BI | Power BI | SQL | Python
+
 🔗 GitHub: [https://github.com/opusvix](https://github.com/opusvix)
