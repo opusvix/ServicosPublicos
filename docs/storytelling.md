@@ -10,15 +10,11 @@
 
 ### Análise de Consumo, Custos e Créditos de Energia Solar (Power BI)
 
----
-
 ## 📌 Contexto do Projeto
 
 Os custos com serviços públicos representam uma parcela relevante do orçamento de organizações públicas e privadas. Este projeto analisa dados históricos de **consumo e faturamento**, com foco na avaliação do impacto financeiro dos **créditos de energia do programa Solar Digital EDP**, estabelecido por contrato de locação de usina de minigeração de energia elétrica.
 
 O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica orientada a negócio, com indicadores financeiros, operacionais e ambientais (ESG), apoiando a tomada de decisão baseada em dados.
-
----
 
 ## 🎯 Objetivos
 
@@ -26,8 +22,6 @@ O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica or
 * Avaliar o impacto financeiro da adoção da energia solar
 * Identificar sazonalidades e oportunidades de eficiência
 * Mensurar a contribuição ambiental associada ao uso de energia limpa
-
----
 
 ## 📊 Estrutura do Dashboard
 
@@ -53,16 +47,12 @@ O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica or
   * Análise consolidada por ano
   * Apoio à tomada de decisão estratégica
 
----
-
 ## 🧩 Modelagem de Dados
 
 * Modelo em estrela
 * Tabela calendário dedicada
 * Relacionamentos unidirecionais (Calendário → Fato)
 * Base preparada para análises temporais e comparativas
-
----
 
 ## 🧮 Principais Medidas DAX
 
@@ -75,8 +65,6 @@ O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica or
 * Contribuição Ambiental Total (Kg CO₂)
 * Variação mês a mês (M/M)
 
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 * Power BI Desktop (PBIP / PBIR)
@@ -84,8 +72,6 @@ O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica or
 * Git & GitHub
 * Visual Studio Code
 * OneDrive (fonte de dados)
-
----
 
 ## 📁 Estrutura do Repositório
 
@@ -97,8 +83,6 @@ O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica or
 ├── .gitignore
 ```
 
----
-
 ## ▶️ Como Executar o Projeto
 
 1. Clone este repositório
@@ -106,15 +90,11 @@ O dashboard foi desenvolvido em **Power BI**, utilizando abordagem analítica or
 3. Caso necessário, ajuste o caminho da base de dados no OneDrive
 4. Atualize o modelo e explore o dashboard
 
----
-
 ## 🚀 Próximos Passos
 
 * Projeções de economia futura
 * Criação de metas e alertas de consumo
 * Expansão dos indicadores ESG
-
----
 
 ## 👤 Autor
 
