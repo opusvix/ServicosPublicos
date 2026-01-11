@@ -1,11 +1,3 @@
-<div align="center">
-  <img src="imagens/Cesan.png" alt="CESAN" height="60" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="imagens/Escelsa.png" alt="EDP Escelsa" height="60" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="imagens/Solar.png" alt="EDP Solar" height="60" />
-</div>
-
 # Serviços Públicos & Energia Solar
 
 ### Análise de Consumo, Custos e Créditos de Energia Solar (Power BI)
