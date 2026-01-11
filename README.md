@@ -6,20 +6,17 @@
   <img src="imagens/Solar.png" alt="EDP Solar" height="60" />
 </div>
 
-# Serviços Públicos – Análise de Consumo e Energia (Power BI)
+# Serviços Públicos & Energia Solar
+### Análise de Consumo, Custos e Créditos de Energia Solar (Power BI)
 
-Projeto de **Business Intelligence em Power BI** focado na análise de **consumo, custos e comportamento energético** de serviços públicos, integrando dados de saneamento e energia elétrica. O objetivo é transformar dados operacionais em **insights estratégicos** para apoio à tomada de decisão.
+Este projeto analisa dados históricos de consumo e faturamento de serviços públicos, com foco na avaliação do impacto financeiro dos créditos de energia do programa Solar Digital EDP, estabelecido por contrato de locação de usina de minigeração de energia elétrica. O objetivo é apoiar decisões gerenciais por meio de indicadores financeiros, operacionais e ambientais.
 
----
+## 🎯 Objetivos
 
-## 🎯 Objetivo
-
-* Consolidar dados de consumo e faturamento
-* Analisar evolução temporal e padrões de uso
-* Identificar oportunidades de redução de custos
-* Apoiar decisões com indicadores claros e visuais interativos
-
----
+- Analisar a evolução dos custos e do consumo ao longo do tempo
+- Avaliar o impacto financeiro da energia solar
+- Identificar sazonalidades e oportunidades de eficiência
+- Mensurar a contribuição ambiental associada à energia limpa
 
 ## 🧩 Escopo do Projeto
 
@@ -28,55 +25,76 @@ Projeto de **Business Intelligence em Power BI** focado na análise de **consumo
 * Indicadores de consumo, custo e variação
 * Comparações mensais e anuais
 
----
+## 📊 Estrutura do Dashboard
 
-## 🛠️ Ferramentas Utilizadas
+- **Página 1 – Visão Geral**
+  - Indicadores-chave de consumo, custo e economia
+  - Evolução temporal dos custos
 
-* **Power BI Desktop**
+- **Página 2 – Consumo & Eficiência**
+  - Heatmap sazonal
+  - Análise por serviço
+  - Indicadores de eficiência
+
+- **Página 3 – Energia Solar & ESG**
+  - Economia acumulada
+  - Comparativo com vs. sem energia solar
+  - Contribuição ambiental (Kg CO₂)
+
+- **Página 4 – Detalhamento Anual**
+  - Análise consolidada por ano
+  - Apoio à tomada de decisão estratégica
+
+## 🧩 Modelagem de Dados
+- Modelo em estrela
+- Tabela calendário dedicada
+- Relacionamentos unidirecionais (Calendário → Fato)
+
+## 🧮 Principais Medidas DAX
+- Consumo Total
+- Valor Total
+- Custo Bruto
+- Economia Solar (R$)
+- Custo Líquido
+- Economia Solar Acumulada
+- % de Economia Solar
+- Contribuição Ambiental Total (Kg CO₂)
+
+## 🛠️ Tecnologias Utilizadas
+* **Power BI Desktop (PBIP / PBIR)**
 * **Power Query (M)** para tratamento de dados
 * **DAX** para criação de medidas e indicadores
-* **Excel / CSV** como fontes de dados
-
----
+* **Git & GitHub**
+* **VS Code**
+* **OneDrive** (fonte de dados)
 
 ## 📊 Principais Indicadores
-
 * Consumo total (kWh / m³)
 * Custo total e médio
 * Variação percentual mensal
 * Tendência de consumo
 
----
-
 ## 📁 Estrutura do Repositório
+├── ServicosPublicos.Report
+├── ServicosPublicos.SemanaticModel
+├── data
+├── docs
+├── imagens/  
+├── .gitignore  
+├── README.md  
+├── storytelling.md  
+├── definition.pbir  
+├── ServicosPublicos.pbip
 
-```text
-📦 powerbi-servicos-publicos
- ┣ 📂 imagens           # Logos e imagens do projeto
- ┣ 📂 data              # Arquivos de dados (CSV / Excel)
- ┣ 📂 pbip              # Arquivo Power BI (.pbix ou .pbir)
- ┣ 📄 README.md         # Documentação do projeto
-```
-
----
-
-## 🔗 Relatório Power BI
-
-O relatório pode ser acessado diretamente pelo arquivo do projeto:
-
-* `definition.pbir` (Power BI Project)
-
-> 💡 Caso esteja utilizando Power BI Desktop, abra o arquivo `.pbir` para carregar todo o projeto.
-
----
+## ▶️ Como Executar
+1. Clone o repositório
+2. Abra o arquivo `definition.pbir` no Power BI Desktop
+3. Atualize a conexão com a base no OneDrive, se necessário
 
 ## 🚀 Próximos Passos
-
-* Publicação no Power BI Service
-* Inclusão de novos indicadores
-* Automação da atualização dos dados
-
----
+- Projeções de economia futura
+- Metas e alertas de consumo
+- Expansão de indicadores ESG
 
 ## 👤 Autor
 
