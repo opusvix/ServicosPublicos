@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "5f95d9a20eb00e2c8ad4",
   "displayName": "Energia Solar & ESG",
-  "displayOption": "FitToWidth",
+  "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
   "objects": {
